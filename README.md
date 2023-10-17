@@ -1,8 +1,8 @@
-Hi 👋
-============================
+👋Greetings from Regular Company
+==================================
 
 Frontend, Backend, English
-------------------------------
+------------------------------------
 
 If a person sets a goal in life, something will surely cause him to achieve it. <br/>
 Our team lays a quality foundation for the benefit of people for their planned future.

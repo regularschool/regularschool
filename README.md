@@ -1,16 +1,18 @@
-Hi 👋 My name is Shoxrux Asadov
-===============================
+Hi 👋
+============================
 
-Frontend Developer | React, Redux
----------------------------------
+Frontend, Backend, English
+------------------------------
 
-With my passion for frontend development and solid technical skills, <br/>
-I am ready to contribute to innovative projects and deliver exceptional user experiences.
+If a person sets a goal in life, something will surely cause him to achieve it. <br/>
+Our team lays a quality foundation for the benefit of people for their planned future.
 
-*   🌍  I'm based in Bukhara, Uzbekistan
-*   🖥️  See my portfolio at [Shoxrux Asadov](http://shoxruxasadov.uz)
-*   ✉️  You can contact me at [shoxruxasadov05@mail.ru](mailto:shoxruxasadov05@mail.ru)
-*   🧠  I'm learning Backend | JAVA, PostgreSQL
+We have the maximum level of quality indicators that meet all requirements. <br/>
+Reach your small goals with us while striving for higher goals
+
+*   🌍  Our company is located in Tashkent, Uzbekistan
+*   🖥️  About our company [Regular Company](https://regularcompany.uz)
+*   ✉️  Our Regular School [Regular School](https://regularschool.uz)
 
 &#32;&#32;<a href="https://www.github.com/ShoxruxAsadov" target="_blank" rel="noreferrer"><img src="https://img.shields.io/github/followers/ShoxruxAsadov?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a>
                   

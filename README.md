@@ -14,7 +14,7 @@ Reach your small goals with us while striving for higher goals
 *   🖥️  About our company [Regular Company](https://regularcompany.uz)
 *   ✉️  Our Regular School [Regular School](https://regularschool.uz)
 
-&#32;&#32;<a href="https://www.github.com/ShoxruxAsadov" target="_blank" rel="noreferrer"><img src="https://img.shields.io/github/followers/ShoxruxAsadov?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a>
+&#32;&#32;<a href="https://github.com/regularschool" target="_blank" rel="noreferrer"><img src="https://img.shields.io/github/followers/ShoxruxAsadov?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917" /></a>
 
 
 ### Skills 

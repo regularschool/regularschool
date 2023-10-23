@@ -7,6 +7,7 @@ import {
   BiLogoFacebook,
   BiLogoInstagram,
   BiLogoTelegram,
+  BiSolidPhoneCall,
 } from "react-icons/bi";
 
 export default function Footer() {
@@ -131,6 +132,9 @@ export default function Footer() {
               href="https://t.me/regular_school"
             >
               <BiLogoTelegram /> <h6>Telegram</h6>
+            </a>
+            <a className="social" href="tel:+998555003663">
+              <BiSolidPhoneCall /> <h5>+998555003663</h5>
             </a>
           </div>
           <p>{`OOO "Regular AR SIM" © 2022-${new Date().getFullYear()}.`}</p>

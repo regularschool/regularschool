@@ -1,11 +1,11 @@
 import React from "react";
 
-import Rasuljon from "../../image/team/RasuljonRasulov.jpg";
-import Alisher from "../../image/team/AlisherZayniddinov.jpg";
+import Rasuljon from "../../image/team/rasulovrasuljon.png";
+import Alisher from "../../image/team/zayniddinovalisher.png";
 import Samandar from "../../image/team/SamandarBozorboyev.jpg";
 import Ezoza from "../../image/team/EzozaNomozova.jpg";
-import Shoxrux from "../../image/team/ShoxruxAsadov.jpg";
-import User from "../../image/team/user.jpg";
+import Shoxrux from "../../image/team/asadovshoxrux.png";
+import User from "../../image/team/user.png";
 
 export default function Team() {
   return (
@@ -49,20 +49,20 @@ export default function Team() {
           </div>
           <div className="people" data-aos="zoom-in-up">
             <div className="image">
-              <img src={Ezoza} alt=" " />
-            </div>
-            <div className="name">
-              <h3>E'zoza Nomozova</h3>
-              <h4>Administrator</h4>
-            </div>
-          </div>
-          <div className="people" data-aos="zoom-in-up">
-            <div className="image">
               <img src={Shoxrux} alt=" " />
             </div>
             <div className="name">
               <h3>Shoxrux Asadov</h3>
               <h4>Front-end dasturchi</h4>
+            </div>
+          </div>
+          <div className="people" data-aos="zoom-in-up">
+            <div className="image">
+              <img src={Ezoza} alt=" " />
+            </div>
+            <div className="name">
+              <h3>E'zoza Nomozova</h3>
+              <h4>Administrator</h4>
             </div>
           </div>
           <div className="people" data-aos="zoom-in-up">

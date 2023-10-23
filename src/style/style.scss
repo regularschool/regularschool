@@ -1152,7 +1152,7 @@ main {
         }
 
         p {
-          max-width: 663px;
+          max-width: 601px;
           font-size: calc(8px + 0.625vw);
           font-weight: 500;
           line-height: 130%;
@@ -1232,7 +1232,6 @@ footer {
     padding: 80px 16px;
     display: flex;
     justify-content: space-between;
-    
 
     @media (max-width: 1000px) {
       padding: 30px 16px 50px;
@@ -1368,7 +1367,7 @@ footer {
               font-size: 18px;
               color: #909090;
               transform: translateY(-30%);
-              transition: .2s;
+              transition: 0.2s;
               cursor: pointer;
               position: absolute;
               top: 50%;
@@ -1377,7 +1376,7 @@ footer {
           }
 
           &.active {
-            .form{
+            .form {
               label {
                 color: $color;
                 font-size: 14px !important;
@@ -1388,7 +1387,6 @@ footer {
               svg {
                 transform: translateY(-30%) rotate(180deg);
               }
-
             }
 
             .option {
@@ -1431,7 +1429,7 @@ footer {
         }
 
         button {
-          max-width: 456px;
+          max-width: 450px;
           width: 100%;
           padding: 17px 0;
           border-radius: 8px;
@@ -1479,7 +1477,7 @@ footer {
     height: 50px;
     border-top: 2px solid #55555510;
 
-    @media (max-width: 730px) {
+    @media (max-width: 800px) {
       height: 80px;
     }
 
@@ -1490,7 +1488,7 @@ footer {
       padding: 0 16px;
       column-gap: 30px;
 
-      @media (max-width: 730px) {
+      @media (max-width: 800px) {
         flex-direction: column;
         justify-content: center;
         row-gap: 12px;
@@ -1508,9 +1506,16 @@ footer {
         cursor: pointer;
         text-decoration: none;
 
+        @media (max-width: 500px) {
+          h6 {
+            display: none;
+          }
+        }
+
         &:hover {
           svg,
-          h6 {
+          h6,
+          h5 {
             color: $color !important;
           }
         }
@@ -1525,7 +1530,8 @@ footer {
           }
         }
 
-        h6 {
+        h6,
+        h5 {
           color: #2c2c2c;
           font-size: 15px;
           font-weight: 500;

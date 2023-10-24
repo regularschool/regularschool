@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import { IoClose } from "react-icons/io5";
 import logoBlack from "../../image/school.png";
 import logoWhite from "../../image/schoolWhite.png";
 
 export default function Header() {
   const [isScrolled, setScrolled] = useState(false);
+  const [removeTesting, setRemoveTesting] = useState(true);
 
   const handleScroll = () => {
     if (window.pageYOffset > 100) setScrolled(true);
@@ -18,6 +20,13 @@ export default function Header() {
 
   return (
     <header id="header" className={`${isScrolled ? "active" : ""}`}>
+      <div
+        className={`wrapper ${removeTesting ? "active" : ""}`}
+        data-aos="fade-down"
+      >
+        <h4>Site test rejimida ishlamoqda!</h4>
+        <IoClose onClick={() => setRemoveTesting(false)} />
+      </div>
       <div className="container" data-aos="fade-down">
         <Link
           className="logo"

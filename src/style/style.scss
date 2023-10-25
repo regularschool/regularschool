@@ -12,15 +12,19 @@ header {
   .test{
     position: absolute;
     top: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background: rgb(213, 18, 18);
     color: white;
-    padding: 2px 8px 4px;
+    padding: 0px 10px 2px;
 
     text-align: end;
     letter-spacing: -0.2px;
     font-size: 14px;
-    border-radius: 0 0 0 10px;
+    border-radius: 0 0 10px 10px;
+
+    text-wrap: nowrap;
+    white-space: nowrap;
   }
 
   .container {

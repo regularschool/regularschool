@@ -20,13 +20,7 @@ export default function Header() {
 
   return (
     <header id="header" className={`${isScrolled ? "active" : ""}`}>
-      <div
-        className={`wrapper ${removeTesting ? "active" : ""}`}
-        data-aos="fade-down"
-      >
-        <h4>Site test rejimida ishlamoqda!</h4>
-        <IoClose onClick={() => setRemoveTesting(false)} />
-      </div>
+      <h4 className="test">Sayt test rejimida ishlamoqda!</h4>
       <div className="container" data-aos="fade-down">
         <Link
           className="logo"

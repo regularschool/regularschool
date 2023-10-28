@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { IoClose } from "react-icons/io5";
 import logoBlack from "../../image/school.png";
 import logoWhite from "../../image/schoolWhite.png";
+import { toast } from "react-toastify";
 
 export default function Header() {
   const [isScrolled, setScrolled] = useState(false);
@@ -14,13 +15,22 @@ export default function Header() {
   };
 
   useEffect(() => {
+    toast.warning("Sayt test rejimida ishlamoqda!", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header id="header" className={`${isScrolled ? "active" : ""}`}>
-      <h4 className="test">Sayt test rejimida ishlamoqda!</h4>
       <div className="container" data-aos="fade-down">
         <Link
           className="logo"

@@ -35,7 +35,7 @@ export default function Footer() {
       <div className="container">
         <ToastContainer />
         <div className="title" data-aos="fade-up">
-          <h2>Bepul kursga yozilish</h2>
+          <h2 className="heading">Bepul kursga yozilish</h2>
           <form className="formes" onSubmit={handleSubmit}>
             <div className="form">
               <input
@@ -102,7 +102,7 @@ export default function Footer() {
         <div className="map" data-aos="fade-left">
           <iframe
             src="https://yandex.uz/map-widget/v1/?ll=69.216432%2C41.252041&mode=search&oid=2471714961&ol=biz&z=17.22"
-            frameborder="0"
+            frameBorder="0"
             width="100%"
             height="100%"
           ></iframe>

@@ -12,13 +12,13 @@ export default function Founder() {
         </div>
 
         <div className="title" data-aos="fade-left">
-          <h2>Asoschi Rasulov Rasuljon</h2>
+          <h2 className="heading">Asoschi Rasulov Rasuljon</h2>
           <p>
             Juda ham izlanuvchan, yosh bo‘lishiga qaramasdan bir necha yutuqlar
-            egasi. <span>“Tadbirkorlar maktabi”</span> ni hamda{" "}
-            <span>“Tizimlashtirish”</span> sohasini ham tugallagan. Shuningdek,{" "}
-            <span>O‘zDJTU Akademik litseyi</span>ning eng namunali bitiruvchisi
-            va hisobchi. <span>Front-end dasturchisi</span>
+            egasi. <b>“Tadbirkorlar maktabi”</b> ni hamda{" "}
+            <b>“Tizimlashtirish”</b> sohasini ham tugallagan. Shuningdek,{" "}
+            <b>O‘zDJTU Akademik litseyi</b>ning eng namunali bitiruvchisi
+            va hisobchi. <b>Front-end dasturchisi</b>
           </p>
           <p>
             Xorijiy filmlarni ko‘rishni, shuningdek ochiq tabiatda yurishni

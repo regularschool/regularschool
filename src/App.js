@@ -18,7 +18,6 @@ export default function App() {
       <main>
         <Hero />
         <About />
-        <Founder />
         <Course />
         <Team />
       </main>

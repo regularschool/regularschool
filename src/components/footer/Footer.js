@@ -87,8 +87,8 @@ export default function Footer() {
               </div>
 
               <div className="option">
-                <div onClick={() => setCourses("Front-end")}>Front-end</div>
-                <div onClick={() => setCourses("Back-end")}>Back-end</div>
+                <div onClick={() => setCourses("Frontend")}>Frontend</div>
+                <div onClick={() => setCourses("Backend")}>Backend</div>
                 <div onClick={() => setCourses("Ingliz tili")}>Ingliz tili</div>
               </div>
             </div>

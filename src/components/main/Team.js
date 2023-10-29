@@ -18,12 +18,6 @@ export default function Team() {
     }
   }, [openModal]);
 
-  useEffect(() => {
-    let sidebar_content = document.getElementsByClassName("content-mate");
-    console.log(sidebar_content);
-    return console.log(sidebar_content);
-  }, [document.getElementsByClassName("content-mate").onscroll]);
-
   return (
     <section id="team">
       <div className="container">

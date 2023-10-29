@@ -28,15 +28,20 @@ import Berramode from "../image/company/berramode.png";
 import CafeFlorya from "../image/company/ganga.png";
 import ITPARK from "../image/company/itpark.webp";
 import TIZIM from "../image/company/tizim.jpg";
+import SHSAL from "../image/company/sirojiddinov.png"
 
 import TUIT from "../image/educations/tuit.png";
 import ShiftAcademy from "../image/educations/shiftacademy.png";
 import uzmu from "../image/educations/uzmu.png";
-import uzswlu from "../image/educations/uzswlu.png";
+import UZDJTU from "../image/educations/uzswlu.png";
 import ISFT from "../image/educations/isft.jpg";
 import Impuls from "../image/educations/impuls.png";
 import TDSHUAL from "../image/educations/tdshu.jpg";
 import TTPU from "../image/educations/ttpu.png";
+import SAMJST from "../image/educations/SAMJST.png"
+import TDPU from "../image/educations/tdpu.jpg"
+import TIPME from "../image/educations/tipme.jpg"
+import NUU from "../image/educations/NUU.png"
 
 const expertMates = [
   {
@@ -56,7 +61,7 @@ const expertMates = [
     socialnet: {
       instagram: "https://instagram.com/rasuljon_rasulovv",
       facebook: "https://www.facebook.com/profile.php?id=100095256084784",
-      telegramChannel: false,
+      telegramChannel: "https://t.me/rasuljon_rasulov",
       youtube: "https://www.youtube.com/@rasuljonrasulov7751/about",
       tiktok: "https://www.tiktok.com/@rasuljon.rasulov?_t=8gnkSkFvhas&_r=1",
       linkedin: false,
@@ -72,7 +77,7 @@ const expertMates = [
       "CRM",
     ],
     aboutme:
-      "Juda ham izlanuvchan, yosh bo‘lishiga qaramasdan bir necha yutuqlar egasi. “Tadbirkorlar maktabi” ni hamda “Tizimlashtirish” sohasini ham tugallagan. Shuningdek, O‘zDJTU Akademik litseyining eng namunali bitiruvchisi va hisobchi.Front-end dasturchisi.                    Xorijiy filmlarni ko‘rishni, shuningdek ochiq tabiatda yurishni yaxshi ko‘radi, Chunki uning ilg’or g’oya va fikrlarini shu jarayonda keladi. Ko‘proq vaqtini oila davrasida o‘tkazishni yaxshi ko‘radi.",
+      "Juda ham izlanuvchan, yosh bo‘lishiga qaramasdan bir necha yutuqlar egasi. “Tadbirkorlar maktabi” ni hamda “Tizimlashtirish” sohasini ham tugallagan. Shuningdek, O‘zDJTU Akademik litseyining eng namunali bitiruvchisi va hozirda ISFT Universitet talabsi hisoblanadi. Front-end dasturchisi.                    Xorijiy filmlarni ko‘rishni, shuningdek ochiq tabiatda yurishni yaxshi ko‘radi, Chunki uning ilg’or g’oya va fikrlarini shu jarayonda keladi. Ko‘proq vaqtini oila davrasida o‘tkazishni yaxshi ko‘radi.",
     experience: [
       {
         companys: [
@@ -112,7 +117,7 @@ const expertMates = [
       {
         name: "O'zbekiston Davlat Jahon tillari Universiteti, Akademik litseyi",
         bachelor: "Xorijiy filologiya",
-        image: uzswlu,
+        image: UZDJTU,
       },
       {
         name: "International school of finance technology and science",
@@ -485,7 +490,13 @@ const expertMates = [
       github: false,
       portfolio: false,
     },
-    skills: ["English Learning", "Matematika", "Leadership", "Operator", "Manager"],
+    skills: [
+      "English Learning",
+      "Matematika",
+      "Leadership",
+      "Operator",
+      "Manager",
+    ],
     aboutme: false,
     experience: [
       {
@@ -520,7 +531,7 @@ const expertMates = [
       {
         name: "O'zbekiston Davlat Jahon tillari Universiteti, Akademik litseyi",
         bachelor: "Xorijiy filologiya",
-        image: uzswlu,
+        image: UZDJTU,
       },
       {
         name: "Mirzo Ulug'bek nomidagi O'zbekiston Milliy universiteti",
@@ -618,12 +629,120 @@ const expertMates = [
       {
         name: "Chimkent shahridagi M.Auvezov nomidegi Universitet",
         bachelor: "'Iqtisodiyot va moliya' yo'nalishi ",
-        image: uzswlu,
+        image: false,
       },
       {
         name: "Tijorat va Tadbirkorlik kolleji",
         bachelor: "Soliq va soliqqa tortish yo'nalishi",
-        image: uzmu,
+        image: false,
+      },
+    ],
+  },
+  {
+    main: User,
+    image: MiniUser,
+    city: "Tashkent Uzbekistan",
+    name: "Munisa Razzokova",
+    expert: "Manager",
+    job: "Manager",
+    communication: 5,
+    technicalSkill: 5,
+    contact: {
+      telegram: "https://t.me/munisaaxadovna",
+      call: false,
+      email: "munisaaxadovna03@gmail.com",
+    },
+    socialnet: {
+      instagram: "https://instagram.com/munisa.axadovna",
+      facebook:
+        "https://www.facebook.com/profile.php?id=61552480730304&mibextid=2JQ9oc",
+      telegramChannel: false,
+      youtube: false,
+      tiktok: false,
+      linkedin: false,
+      github: false,
+      portfolio: false,
+    },
+    skills: ["Manager", "Metadist", "Biolog", "Ped Texnolog"],
+    aboutme:
+      "O'z ustida ko'p ishlaydigan va bir vaqtning o'zida O'zDJTU akademik litseyda Metadist bo'lib ishlamoqda va 'Regular IT School'da Menejer lavozimida ishlab kelmoqda. Hozirgi vaqtda 'META ta'lim'da Turk tilini o'rganmoqda, bo'sh vaqtlarida sayr qilishni yaxshi ko'radi, farzandlariga mehribon ona.",
+    experience: [
+      {
+        company: "Regular School",
+        name: "Menejer",
+        time: "Full Time",
+        duration: "1 yil",
+        category: [
+          "Boshqaruv bo'yicha yosh kadrlarga bilim malaka berib kelmoqda.",
+          "Yangi Ped Texnologiyalar bo'yicha bilim ko'nikmalar hosil qilishda yordam berib kelmoqda.",
+        ],
+        skills: ["Manager"],
+        image: Regular,
+      },
+      {
+        company: "O'zDJTU Akademik litsey",
+        name: "Metadist",
+        time: "Full Time",
+        duration: "3yil",
+        category: [
+          "Yangi Ped Texnologiya bo'yicha ko'nikma va malaka ishlarini olib borgan.",
+        ],
+        skills: ["Ped Texnolog"],
+        image: UZDJTU,
+      },
+      {
+        company: "S.H.Sirojiddinov Nomidagi Akademik litsey",
+        name: "Biolog",
+        time: "Full Time",
+        duration: "11yil",
+        category: ["Yosh kadrlarga bilim berish.", "Ishlash jarayonida Magistr darajasiga chiqish."],
+        skills: ["Biolog O'qituvchi", "Magistratura"],
+        image: SHSAL,
+      },
+      {
+        company: "BIO ECO SAN",
+        name: "To'garak rahbari",
+        time: "Full Time",
+        duration: "1yil",
+        category: ["Ekologiya bo'yicha ko'nikma va malakaga ega bo'lgan"],
+        skills: ["Ecolog"],
+        image: false,
+      },
+      {
+        company: "Samarqand viloyat Shifoxona",
+        name: "Labarant",
+        time: "Full Time",
+        duration: "1yil 6oy",
+        category: ["Labaratoriya ishlari va h.k."],
+        skills: ["Qon tahlil", "Diagnostika"],
+        image: false,
+      },
+    ],
+    education: [
+      {
+        name: "Samarqand Med Texnikum",
+        bachelor: "",
+        image: SAMJST,
+      },
+      {
+        name: "Toshkent Davlat Pedagogika Universiteti",
+        bachelor: "Biofag (Biologiya va Xayot hafsizligi)",
+        image: TDPU,
+      },
+      {
+        name: "TIPME Malaka oshirish markazi",
+        bachelor: "Klinik Labaratoriya",
+        image: TIPME,
+      },
+      {
+        name: "O‘zbekiston Milliy universiteti",
+        bachelor: "Biofag (Magistratura)",
+        image: NUU,
+      },
+      {
+        name: "Metadist Akademik litsey boshqarmasi",
+        bachelor: "Metadist yo'nalishida",
+        image: false,
       },
     ],
   },

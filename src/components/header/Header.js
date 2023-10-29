@@ -63,19 +63,6 @@ export default function Header() {
               <Link
                 className="logo"
                 activeClass="active"
-                to="founder"
-                spy={true}
-                smooth={true}
-                offset={-60}
-                duration={500}
-              >
-                Asoschi
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="logo"
-                activeClass="active"
                 to="course"
                 spy={true}
                 smooth={true}
@@ -96,6 +83,19 @@ export default function Header() {
                 duration={500}
               >
                 Jamoa
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="logo"
+                activeClass="active"
+                to="founder"
+                spy={true}
+                smooth={true}
+                offset={-60}
+                duration={500}
+              >
+                Yangiliklar
               </Link>
             </li>
             <li>
@@ -147,17 +147,6 @@ export default function Header() {
               <Link
                 className="list-item"
                 activeClass="active"
-                to="founder"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                Asoschi
-              </Link>
-              <Link
-                className="list-item"
-                activeClass="active"
                 to="course"
                 spy={true}
                 smooth={true}
@@ -177,7 +166,17 @@ export default function Header() {
               >
                 Jamoa
               </Link>
-
+              <Link
+                className="list-item"
+                activeClass="active"
+                to="news"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                Yangiliklar
+              </Link>
               <Link
                 className="list-item"
                 activeClass="active"

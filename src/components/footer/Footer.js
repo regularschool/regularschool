@@ -12,7 +12,13 @@ import {
 
 export default function Footer() {
   const [coursess, setCourses] = useState("");
+  const [telnumber, setTelnumber] = useState("");
   const [state, handleSubmit] = useForm("xqkvwgjr");
+
+  useEffect(() => {
+    if (telnumber.toLowerCase() == "e") setTelnumber("");
+    setTelnumber(telnumber.toLowerCase().replace("e", ""));
+  }, [telnumber]);
 
   function taost() {
     if (state.succeeded)
@@ -53,6 +59,8 @@ export default function Footer() {
                 id="tel"
                 name="Telefon raqam"
                 autoComplete="off"
+                value={telnumber}
+                onChange={({ target }) => setTelnumber(target.value)}
                 required
               />
               <label htmlFor="tel">Telefon raqam</label>
@@ -105,6 +113,7 @@ export default function Footer() {
             frameBorder="0"
             width="100%"
             height="100%"
+            lang="uz_UZ"
           ></iframe>
         </div>
       </div>

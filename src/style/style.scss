@@ -1397,7 +1397,7 @@ main {
 
             @media (max-width: 576px) {
               width: 100% !important;
-              height: 100vh !important;
+              height: 100svh !important;
               border-radius: 0px !important;
             }
 
@@ -1415,6 +1415,7 @@ main {
               left: 20px;
               width: 40px;
               height: 40px;
+              z-index: 1000;
               border-radius: 50%;
               box-shadow: 0 0 10px $color;
               background: $color;

@@ -5,6 +5,7 @@ import Shoxrux from "../image/team/shoxruxasadov.png";
 import Ezoza from "../image/team/ezozanomozova.png";
 import Madina from "../image/team/madinanematova.png";
 import Sevinch from "../image/team/rasulovasevinch.png";
+import Munisa from "../image/team/munisarazzokova.png"
 import User from "../image/team/user.png";
 
 import MiniShoxrux from "../image/team/mini/shoxruxasadov.png";
@@ -14,6 +15,7 @@ import MiniSamandar from "../image/team/mini/samandarbozorboyev.png";
 import MiniSevinch from "../image/team/mini/rasulovasevinch.png";
 import MiniMadina from "../image/team/mini/madinanematova.png";
 import MiniEzoza from "../image/team/mini/ezozanomozova.jpg.png";
+import MiniMunisa from "../image/team/mini/munisarazzokova.png"
 import MiniUser from "../image/team/mini/user.png";
 
 import Regular from "../image/company/regular.jpg";
@@ -218,12 +220,12 @@ const expertMates = [
       email: "mrbscoder@gmail.com",
     },
     socialnet: {
-      instagram: "https://www.instagram.com/samandarbozorboyevv",
+      instagram: "https://instagram.com/samandarbozorboyevv",
       facebook: false,
       telegramChannel: false,
       youtube: false,
       tiktok: false,
-      linkedin: "https://www.linkedin.com/in/samandar-bozorboyev/",
+      linkedin: "https://linkedin.com/in/samandar-bozorboyev/",
       github: "https://github.com/bscoderuz",
       portfolio: false,
     },
@@ -296,7 +298,7 @@ const expertMates = [
   {
     main: Shoxrux,
     image: MiniShoxrux,
-    city: "Tashkent Uzbekistan",
+    city: "Bukhara Uzbekistan",
     name: "Shoxrux Asadov",
     expert: "Frontend dasturchi",
     job: "Frontend dasturchi",
@@ -308,7 +310,7 @@ const expertMates = [
       email: false,
     },
     socialnet: {
-      instagram: "https://instagram.com/Shokh.dev",
+      instagram: "https://instagram.com/shoxruxasadovv",
       facebook: false,
       telegramChannel: false,
       youtube: "https://youtube.com/@ShokhDeveloper",
@@ -412,7 +414,7 @@ const expertMates = [
       email: "ezozanomozova@gmail.com",
     },
     socialnet: {
-      instagram: "https://www.instagram.com/noejmo/",
+      instagram: "https://instagram.com/noejmo",
       facebook: false,
       telegramChannel: false,
       youtube: false,
@@ -481,7 +483,7 @@ const expertMates = [
       email: "madinabonunematova8@gmail.com",
     },
     socialnet: {
-      instagram: "https://instagram.com/e.for1m?igshid=Z205YmE1a2sxdDFx",
+      instagram: "https://instagram.com/e.for1m",
       facebook: false,
       telegramChannel: false,
       youtube: false,
@@ -555,7 +557,7 @@ const expertMates = [
       email: false,
     },
     socialnet: {
-      instagram: false,
+      instagram: "https://instagram.com/platzss",
       facebook: false,
       telegramChannel: false,
       youtube: false,
@@ -639,8 +641,8 @@ const expertMates = [
     ],
   },
   {
-    main: User,
-    image: MiniUser,
+    main: Munisa,
+    image: MiniMunisa,
     city: "Tashkent Uzbekistan",
     name: "Munisa Razzokova",
     expert: "Menejer",

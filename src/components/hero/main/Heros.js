@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-scroll";
 
-export default function Hero() {
+export default function Heros() {
   const [openRodal, setRodal] = useState(false);
 
   return (
@@ -26,7 +26,7 @@ export default function Hero() {
             offset={0}
             duration={500}
           >
-            Bepul dars
+            Bepul kursga yozilish
           </Link>
         </div>
       </div>

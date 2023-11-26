@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Rodal from "rodal";
-import expertMates from "../../utility/team";
+import expertMates from "../../../utility/team";
 
 import { IoCloseSharp } from "react-icons/io5";
 import { FaTelegram, FaPhoneVolume } from "react-icons/fa6";

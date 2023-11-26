@@ -10,7 +10,7 @@
 body {
   width: 100%;
   height: 100svh;
-  background-image: url("../image/bg.png");
+  background-image: url("../image/bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body {
   width: 100%;
   min-height: 100svh;
   color: #000;
-  background: #0d0d0dbf;
+  background: #00000090;
   font-family: "Montserrat", sans-serif;
   position: relative;
   overflow: hidden;

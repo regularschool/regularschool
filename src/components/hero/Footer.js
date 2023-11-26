@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "@formspree/react";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { IoIosArrowDown } from "react-icons/io";
 import {
@@ -39,7 +39,6 @@ export default function Footer() {
   return (
     <footer id="contact">
       <div className="container">
-        <ToastContainer />
         <div className="title" data-aos="fade-up">
           <h2 className="heading">Bepul kursga yozilish</h2>
           <form className="formes" onSubmit={handleSubmit}>

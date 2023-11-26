@@ -1,27 +1,22 @@
 import React from "react";
-import Header from "./components/header/Header";
-import Hero from "./components/main/Hero";
-import About from "./components/main/About";
-import Founder from "./components/main/Founder";
-import Course from "./components/main/Course";
-import Footer from "./components/footer/Footer";
-import Team from "./components/main/Team";
+import { Route, Routes } from "react-router-dom";
 import AOS from "aos";
 
+// PAGES
+import Hero from "./pages/Hero";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
 
 AOS.init();
 
 export default function App() {
   return (
     <>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Course />
-        <Team />
-      </main>
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/home" element={<Home />}/>
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </>
   );
 }

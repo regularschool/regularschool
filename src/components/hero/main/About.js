@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { HiOutlinePlayCircle } from "react-icons/hi2";
-import teamPhoto from "../../image/team.jpg";
+import teamPhoto from "../../../image/team.jpg";
 
 export default function About() {
   return (

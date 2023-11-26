@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import { Link as LinkTo } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 import logoBlack from "../../image/school.png";
 import logoWhite from "../../image/schoolWhite.png";
@@ -113,8 +114,8 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <div className="marketing">
-          <a href="tel:998555003663">+998 55 500 3663</a>
+        <div className="login">
+          <LinkTo to="/login">Login</LinkTo>
         </div>
 
         <div className="menu">

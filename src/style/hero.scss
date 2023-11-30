@@ -83,18 +83,19 @@ header {
       }
     }
 
-    .login {
+    .login,
+    .mobileLogin {
       display: flex;
       align-items: center;
       gap: 12px;
 
-      button{
+      button {
         all: unset;
         width: 36px;
         margin-top: 4px;
         cursor: pointer;
 
-        img{
+        img {
           width: 100%;
         }
       }
@@ -121,9 +122,19 @@ header {
         text-decoration: none;
 
         &:hover {
-          background: $color!important;
-          color: white!important;
+          background: $color !important;
+          color: white !important;
         }
+      }
+    }
+
+    .mobileLogin {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+
+      a {
+        width: 132px;
       }
     }
 
@@ -157,6 +168,10 @@ header {
         }
 
         .switch {
+          background: #000000cc;
+          backdrop-filter: blur(10px);
+          transform: translateX(1px);
+
           .wrap {
             right: 20px;
             top: 20px;
@@ -169,6 +184,7 @@ header {
 
           .list {
             visibility: visible;
+
             a {
               transition: 0.5s;
               transform: translateX(0);
@@ -238,14 +254,16 @@ header {
       }
 
       .switch {
-        width: 160px;
-        height: 240px;
+        width: 200px;
+        height: calc(100vh + 1px);
         position: absolute;
-        top: -5px;
-        right: -5px;
+        top: -15px;
+        right: -16px;
         z-index: 0;
         overflow: hidden;
-        border-radius: 8px;
+        border-radius: 8px 0 0 8px;
+        transition: 0.6s;
+        transform: translateX(200px);
 
         .wrap {
           position: absolute;
@@ -266,7 +284,7 @@ header {
 
         .list {
           position: absolute;
-          top: 57px;
+          top: 72px;
           right: 12px;
           z-index: 5;
           visibility: hidden;
@@ -622,7 +640,7 @@ main {
           padding: 24px 13px;
           cursor: default;
 
-          &.ru{
+          &.ru {
             height: 288px;
           }
 

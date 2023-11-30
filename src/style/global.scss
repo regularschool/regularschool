@@ -18,7 +18,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   &.mobile {
     background-color: transparent;
   }
@@ -51,4 +51,15 @@ body {
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+::selection {
+  background: #0dd70d;
+  color: white;
+}
+
+img::selection,
+svg::selection,
+iframe::selection {
+  background: transparent;
 }

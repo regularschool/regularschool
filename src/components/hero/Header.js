@@ -164,7 +164,6 @@ export default function Header() {
           </div>
 
           <div className="switch">
-            <div className={`wrap ${isScrolled ? "active" : ""}`}></div>
             <div className={`list ${isScrolled ? "active" : ""}`}>
               <Link
                 className="list-item"
@@ -174,8 +173,11 @@ export default function Header() {
                 smooth={true}
                 offset={0}
                 duration={500}
+                onClick={() =>
+                  document.querySelector(".menu").classList.toggle("active")
+                }
               >
-                Biz haqimizda
+                {t("heros.header.about")}
               </Link>
               <Link
                 className="list-item"
@@ -185,8 +187,11 @@ export default function Header() {
                 smooth={true}
                 offset={0}
                 duration={500}
+                onClick={() =>
+                  document.querySelector(".menu").classList.toggle("active")
+                }
               >
-                Kurslar
+                {t("heros.header.courses")}
               </Link>
               <Link
                 className="list-item"
@@ -196,8 +201,11 @@ export default function Header() {
                 smooth={true}
                 offset={0}
                 duration={500}
+                onClick={() =>
+                  document.querySelector(".menu").classList.toggle("active")
+                }
               >
-                Jamoa
+                {t("heros.header.team")}
               </Link>
               <Link
                 className="list-item"
@@ -207,8 +215,11 @@ export default function Header() {
                 smooth={true}
                 offset={0}
                 duration={500}
+                onClick={() =>
+                  document.querySelector(".menu").classList.toggle("active")
+                }
               >
-                Yangiliklar
+                {t("heros.header.news")}
               </Link>
               <Link
                 className="list-item"
@@ -218,9 +229,21 @@ export default function Header() {
                 smooth={true}
                 offset={0}
                 duration={500}
+                onClick={() =>
+                  document.querySelector(".menu").classList.toggle("active")
+                }
               >
-                Aloqa
+                {t("heros.header.call")}
               </Link>
+            </div>
+            <div className="mobileLogin">
+              <button onClick={changeLanguage}>
+                <img
+                  src={i18n.language == "ru" ? langRU : langUZ}
+                  alt={i18n.language == "ru" ? "ru" : "uz"}
+                />
+              </button>
+              <LinkTo to="/login">{t("heros.header.login")}</LinkTo>
             </div>
           </div>
         </div>

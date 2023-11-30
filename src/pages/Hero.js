@@ -6,7 +6,6 @@ import Course from "../components/hero/main/Course";
 import Team from "../components/hero/main/Team";
 import Footer from "../components/hero/Footer";
 import "../style/hero.scss";
-import { use } from "i18next";
 
 export default function Hero() {
   function isMobile() {
@@ -24,8 +23,6 @@ export default function Hero() {
       document.querySelector("body").classList.add("dektop");
     }
   }, [isMobile()]);
-
-  console.log(isMobile());
 
   return (
     <>

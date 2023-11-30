@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Rodal from "rodal";
 import expertMates from "../../../utility/team";
 
-import { IoCloseSharp } from "react-icons/io5";
 import { FaTelegram, FaPhoneVolume } from "react-icons/fa6";
+import { IoCloseSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 
 export default function Team() {
+  const [t, i18n] = useTranslation("global");
   const [openModal, setOpenModal] = useState(false);
   const [selectMate, setSelectMate] = useState(0);
 
@@ -22,12 +24,8 @@ export default function Team() {
     <section id="team">
       <div className="container">
         <div className="title" data-aos="fade-up">
-          <h2 className="heading">Bizning jamoa</h2>
-          <p className="subtitle">
-            Dunyoqarashlari va orzulari bir-biri bilan to’liq ug’unlashib
-            ketgan, bir-birini juda hurmat qiladigan, samimiy insonlardan
-            tashkil topgan iqtidorli mutaxassislar jamoasi.
-          </p>
+          <h2 className="heading">{t("heros.team.title")}</h2>
+          <p className="subtitle">{t("heros.team.subtitle")}</p>
         </div>
         <div className="mates">
           {expertMates.map((item, index) => (

@@ -1,12 +1,14 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 
 export default function Course() {
+  const [t, i18n] = useTranslation("global");
   return (
     <section id="course">
       <div className="container">
         <div className="title" data-aos="fade-up">
-          <h2 className="heading">Kurslarimiz</h2>
+          <h2 className="heading">{t("heros.courses.title")}</h2>
           <div className="subtitle">
             <Link
               activeClass="active"
@@ -16,7 +18,7 @@ export default function Course() {
               offset={-220}
               duration={500}
             >
-              Front-end
+              Frontend
             </Link>
             <div className="line"></div>
             <Link
@@ -27,7 +29,7 @@ export default function Course() {
               offset={-220}
               duration={500}
             >
-              Back-end
+              Backend
             </Link>
             <div className="line"></div>
             <Link
@@ -38,15 +40,15 @@ export default function Course() {
               offset={-340}
               duration={500}
             >
-              Ingliz tili
+              English
             </Link>
           </div>
         </div>
         <div className="courses">
           <div className="card" id="frontend" data-aos="fade-up">
             <div className="title">
-              <h3>Front-end</h3>
-              <p>Haftada - 3 marta (2 soatdan)</p>
+              <h3>{t("heros.courses.frontend.title")}</h3>
+              <p>{t("heros.courses.frontend.week")}</p>
               <div className="time-price">
                 <div className="inner">
                   <svg
@@ -61,8 +63,8 @@ export default function Course() {
                       fill="#0DD70D"
                     />
                   </svg>
-                  <h4>Davomiyligi</h4>
-                  <h5>6 oy</h5>
+                  <h4>{t("heros.courses.duration")}</h4>
+                  <h5>6 {t("heros.courses.month")}</h5>
                 </div>
                 <div className="inner">
                   <svg
@@ -77,9 +79,9 @@ export default function Course() {
                       fill="#0DD70D"
                     />
                   </svg>
-                  <h4>Oylik to’lov narxi</h4>
+                  <h4>{t("heros.courses.price")}</h4>
                   <h5>
-                    900.000 <span>So’m</span>
+                    900.000 <span>{t("heros.courses.money")}</span>
                   </h5>
                 </div>
               </div>
@@ -92,7 +94,7 @@ export default function Course() {
                 offset={0}
                 duration={500}
               >
-                Royxatdan o’tish
+                {t("heros.courses.register")}
               </Link>
             </div>
             <div className="content">
@@ -337,8 +339,8 @@ export default function Course() {
           </div>
           <div className="card" id="backend" data-aos="fade-up">
             <div className="title">
-              <h3>Back-end</h3>
-              <p>Haftada - 3 marta (2 soatdan)</p>
+              <h3>{t("heros.courses.backend.title")}</h3>
+              <p>{t("heros.courses.backend.week")}</p>
               <div className="time-price">
                 <div className="inner">
                   <svg
@@ -353,8 +355,8 @@ export default function Course() {
                       fill="#0DD70D"
                     />
                   </svg>
-                  <h4>Davomiyligi</h4>
-                  <h5>6 oy</h5>
+                  <h4>{t("heros.courses.duration")}</h4>
+                  <h5>6 {t("heros.courses.month")}</h5>
                 </div>
                 <div className="inner">
                   <svg
@@ -369,9 +371,9 @@ export default function Course() {
                       fill="#0DD70D"
                     />
                   </svg>
-                  <h4>Oylik to’lov narxi</h4>
+                  <h4>{t("heros.courses.price")}</h4>
                   <h5>
-                    900.000 <span>So’m</span>
+                    900.000 <span>{t("heros.courses.money")}</span>
                   </h5>
                 </div>
               </div>
@@ -384,7 +386,7 @@ export default function Course() {
                 offset={0}
                 duration={500}
               >
-                Royxatdan o’tish
+                {t("heros.courses.register")}
               </Link>
             </div>
             <div className="content">
@@ -567,8 +569,8 @@ export default function Course() {
           </div>
           <div className="card" id="english" data-aos="fade-up">
             <div className="title">
-              <h3>Ingliz Tili</h3>
-              <p>Haftada - 3 marta (2 soatdan)</p>
+              <h3>{t("heros.courses.english.title")}</h3>
+              <p>{t("heros.courses.english.week")}</p>
               <div className="time-price">
                 <div className="inner">
                   <svg
@@ -583,8 +585,8 @@ export default function Course() {
                       fill="#0DD70D"
                     />
                   </svg>
-                  <h4>Davomiyligi</h4>
-                  <h5>8 oy</h5>
+                  <h4>{t("heros.courses.duration")}</h4>
+                  <h5>8 {t("heros.courses.month")}</h5>
                 </div>
                 <div className="inner">
                   <svg
@@ -599,9 +601,9 @@ export default function Course() {
                       fill="#0DD70D"
                     />
                   </svg>
-                  <h4>Oylik to’lov narxi</h4>
+                  <h4>{t("heros.courses.price")}</h4>
                   <h5>
-                    450.000 <span>So’m</span>
+                    450.000 <span>{t("heros.courses.money")}</span>
                   </h5>
                 </div>
               </div>
@@ -614,7 +616,7 @@ export default function Course() {
                 offset={0}
                 duration={500}
               >
-                Royxatdan o’tish
+                {t("heros.courses.register")}
               </Link>
             </div>
             <div className="content">

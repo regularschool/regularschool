@@ -86,15 +86,28 @@ header {
     .login {
       display: flex;
       align-items: center;
-      gap: 30px;
+      gap: 12px;
+
+      button{
+        all: unset;
+        width: 36px;
+        margin-top: 4px;
+        cursor: pointer;
+
+        img{
+          width: 100%;
+        }
+      }
 
       a {
         cursor: pointer;
         font-size: 18px;
         font-weight: 600;
 
+        width: 100px;
+        height: 36px;
         display: block;
-        padding: 5px 25px;
+        line-height: 34px;
 
         color: white;
         background: $color;
@@ -608,6 +621,10 @@ main {
           border: 1px solid #ebebeb;
           padding: 24px 13px;
           cursor: default;
+
+          &.ru{
+            height: 288px;
+          }
 
           @media (max-width: 475px) {
             width: 100%;
@@ -1979,6 +1996,7 @@ main {
 
 footer {
   background: $white;
+  overflow: hidden;
 
   .container {
     max-width: 1400px;

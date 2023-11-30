@@ -1,24 +1,24 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 import { HiOutlineArrowSmRight } from "react-icons/hi";
-import { HiOutlinePlayCircle } from "react-icons/hi2";
 import teamPhoto from "../../../image/team.jpg";
 
 export default function About() {
+  const [t, i18n] = useTranslation("global");
   return (
     <section id="about">
       <div className="container">
         <div className="left-about">
           <div className="title" data-aos="fade-up">
-            <h2 className="heading">Biz haqimizda</h2>
-            <p>Qiyin yo‘l, Oson hayotga intilayotgan;</p>
-            <p>Mashaqatdan qochmaydigan;</p>
-            <p>Doim izlanishda bo‘lgan;</p>
+            <h2 className="heading">{t("heros.about.title")}</h2>
+            <p>{t("heros.about.paragraph1")}</p>
+            <p>{t("heros.about.paragraph2")}</p>
+            <p>{t("heros.about.paragraph3")}</p>
             <p>
-              Orzulari va maqsadlari yetuk bo‘lgan yoshlar uchun
-              <span> REGULAR SCHOOL</span>, zamonaviy kasblarni egallashda eng
-              ishonchli o‘quv markazidir.
+              {t("heros.about.paragraph4.1")}
+              <span>{t("heros.about.regularschool")}</span>
+              {t("heros.about.paragraph4.2")}
             </p>
           </div>
           <div className="video" data-aos="fade-up">
@@ -43,10 +43,11 @@ export default function About() {
             </svg>
             <div className="content">
               <h3>
-                <span>Regular</span> school haqida
+                <span>{t("heros.about.regular")}</span>
+                {t("heros.about.video1")}
               </h3>
               <h3 className="video-title">
-                video! <HiOutlineArrowSmRight />
+                {t("heros.about.video2")} <HiOutlineArrowSmRight />
               </h3>
             </div>
           </div>
@@ -57,7 +58,10 @@ export default function About() {
         </div>
 
         <div className="connection">
-          <div className="card" data-aos="flip-right">
+          <div
+            className={`card ${i18n.language == "ru" ? "ru" : ""}`}
+            data-aos="flip-right"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="38"
@@ -70,10 +74,13 @@ export default function About() {
                 fill="#0DD70D"
               />
             </svg>
-            <h3>Kurs oxirida sertifikat bilan taqdirlash</h3>
-            <p>Eng yaxshi va iqtidorli o’quvchilarni ish bilan taminlash</p>
+            <h3>{t("heros.about.advantages.certificate.title")}</h3>
+            <p>{t("heros.about.advantages.certificate.body")}</p>
           </div>
-          <div className="card" data-aos="flip-right">
+          <div
+            className={`card ${i18n.language == "ru" ? "ru" : ""}`}
+            data-aos="flip-right"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="42"
@@ -89,12 +96,13 @@ export default function About() {
                 strokeLinejoin="round"
               />
             </svg>
-            <h3>Sifatli va kreativ darslar</h3>
-            <p>
-              Mutaxsislar tominidan, shinam xonada sifatli va ishonchli dars
-            </p>
+            <h3>{t("heros.about.advantages.grade.title")}</h3>
+            <p>{t("heros.about.advantages.grade.body")}</p>
           </div>
-          <div className="card" data-aos="flip-right">
+          <div
+            className={`card ${i18n.language == "ru" ? "ru" : ""}`}
+            data-aos="flip-right"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="47"
@@ -107,10 +115,13 @@ export default function About() {
                 fill="#0DD70D"
               />
             </svg>
-            <h3>Coworking zona</h3>
-            <p>Darsdan tashqari vazifalarni qilish uchun bepul joy</p>
+            <h3>{t("heros.about.advantages.coworking.title")}</h3>
+            <p>{t("heros.about.advantages.coworking.body")}</p>
           </div>
-          <div className="card" data-aos="flip-right">
+          <div
+            className={`card ${i18n.language == "ru" ? "ru" : ""}`}
+            data-aos="flip-right"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="43"
@@ -125,13 +136,13 @@ export default function About() {
                 fill="#0DD70D"
               />
             </svg>
-            <h3>Yakshanba kunlari qiziqarli treninglar</h3>
-            <p>
-              Movie day Musobaqalar Professional speakerlar Game day Speaking
-              club
-            </p>
+            <h3>{t("heros.about.advantages.trainings.title")}</h3>
+            <p>{t("heros.about.advantages.trainings.body")}</p>
           </div>
-          <div className="card" data-aos="flip-right">
+          <div
+            className={`card ${i18n.language == "ru" ? "ru" : ""}`}
+            data-aos="flip-right"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="43"
@@ -151,10 +162,13 @@ export default function About() {
                 </clipPath>
               </defs>
             </svg>
-            <h3>Bepul Coffee break</h3>
-            <p>Issiqgina coffee bilan qiziqarli va manfatli kitoblar</p>
+            <h3>{t("heros.about.advantages.coffee.title")}</h3>
+            <p>{t("heros.about.advantages.coffee.body")}</p>
           </div>
-          <div className="card" data-aos="flip-right">
+          <div
+            className={`card ${i18n.language == "ru" ? "ru" : ""}`}
+            data-aos="flip-right"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="45"
@@ -174,11 +188,8 @@ export default function About() {
                 </clipPath>
               </defs>
             </svg>
-            <h3>Dars davomida Point lar yig’ish</h3>
-            <p>
-              Oʻqish davomida oʻzini bilimlariga tayanib pointlar yigʻishadi.
-              POINTlarni sovgʻalarga almashish mumkin
-            </p>
+            <h3>{t("heros.about.advantages.points.title")}</h3>
+            <p>{t("heros.about.advantages.points.body")}</p>
           </div>
         </div>
       </div>

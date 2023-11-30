@@ -11,12 +11,10 @@ AOS.init();
 
 export default function App() {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/home" element={<Home />}/>
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<Hero />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
   );
 }

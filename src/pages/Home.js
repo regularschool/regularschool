@@ -9,7 +9,6 @@ import "../style/home.scss";
 export default function Home() {
   return (
     <div id="home">
-      <h1 id="soon">Coming Soon!</h1>
       <HomeHeader />
       <HomeSidebar />
       <Outlet />

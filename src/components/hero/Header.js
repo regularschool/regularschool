@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-scroll";
 import { Link as LinkTo } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { toast } from "react-toastify";
+import { Link } from "react-scroll";
+import i18next from "i18next";
+
 import { IoClose } from "react-icons/io5";
 import logoBlack from "../../image/school.png";
 import logoWhite from "../../image/schoolWhite.png";
-import { toast } from "react-toastify";
+import langRU from "../../image/langRu.svg";
+import langUZ from "../../image/langUz.svg";
 
 export default function Header() {
   const [isScrolled, setScrolled] = useState(false);
@@ -17,7 +22,7 @@ export default function Header() {
 
   useEffect(() => {
     toast.warning("Sayt test rejimida ishlamoqda!", {
-      position: "top-right",
+      position: "bottom-right",
       autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -29,6 +34,27 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const [lang, setLang] = useState(true);
+  const [t, i18n] = useTranslation("global");
+  const language = localStorage.getItem("lang");
+  const handleChangeLanguage = (lang) => {
+    i18next.changeLanguage(lang);
+  };
+
+  useEffect(() => {
+    handleChangeLanguage(language);
+  }, [lang]);
+
+  function changeLanguage() {
+    if (lang) {
+      localStorage.setItem("lang", "ru");
+      setLang(!lang);
+    } else {
+      localStorage.setItem("lang", "uz");
+      setLang(!lang);
+    }
+  }
 
   return (
     <header id="header" className={`${isScrolled ? "active" : ""}`}>
@@ -57,7 +83,7 @@ export default function Header() {
                 offset={-50}
                 duration={500}
               >
-                Biz haqimizda
+                {t("heros.header.about")}
               </Link>
             </li>
             <li>
@@ -70,7 +96,7 @@ export default function Header() {
                 offset={0}
                 duration={500}
               >
-                Kurslar
+                {t("heros.header.courses")}
               </Link>
             </li>
             <li>
@@ -83,7 +109,7 @@ export default function Header() {
                 offset={0}
                 duration={500}
               >
-                Jamoa
+                {t("heros.header.team")}
               </Link>
             </li>
             <li>
@@ -96,7 +122,7 @@ export default function Header() {
                 offset={-60}
                 duration={500}
               >
-                Yangiliklar
+                {t("heros.header.news")}
               </Link>
             </li>
             <li>
@@ -109,13 +135,20 @@ export default function Header() {
                 offset={0}
                 duration={500}
               >
-                Aloqa
+                {t("heros.header.call")}
               </Link>
             </li>
           </ul>
         </nav>
+
         <div className="login">
-          <LinkTo to="/login">Login</LinkTo>
+          <button onClick={changeLanguage}>
+            <img
+              src={i18n.language == "ru" ? langRU : langUZ}
+              alt={i18n.language == "ru" ? "ru" : "uz"}
+            />
+          </button>
+          <LinkTo to="/login">{t("heros.header.login")}</LinkTo>
         </div>
 
         <div className="menu">
@@ -132,7 +165,6 @@ export default function Header() {
 
           <div className="switch">
             <div className={`wrap ${isScrolled ? "active" : ""}`}></div>
-
             <div className={`list ${isScrolled ? "active" : ""}`}>
               <Link
                 className="list-item"

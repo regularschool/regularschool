@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useForm } from "@formspree/react";
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 import { IoIosArrowDown } from "react-icons/io";
 import {
   BiLogoFacebook,
@@ -11,6 +12,7 @@ import {
 } from "react-icons/bi";
 
 export default function Footer() {
+  const [t, i18n] = useTranslation("global");
   const [coursess, setCourses] = useState("");
   const [telnumber, setTelnumber] = useState("");
   const [state, handleSubmit] = useForm("xqkvwgjr");
@@ -22,7 +24,7 @@ export default function Footer() {
 
   function taost() {
     if (state.succeeded)
-      toast.success("Sizning arizangiz yuborildi", {
+      toast.success(t("heros.footer.petition"), {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -40,7 +42,7 @@ export default function Footer() {
     <footer id="contact">
       <div className="container">
         <div className="title" data-aos="fade-up">
-          <h2 className="heading">Bepul kursga yozilish</h2>
+          <h2 className="heading">{t("heros.footer.title")}</h2>
           <form className="formes" onSubmit={handleSubmit}>
             <div className="form">
               <input
@@ -50,7 +52,7 @@ export default function Footer() {
                 autoComplete="off"
                 required
               />
-              <label htmlFor="name">Ism</label>
+              <label htmlFor="name">{t("heros.footer.name")}</label>
             </div>
             <div className="form">
               <input
@@ -62,7 +64,7 @@ export default function Footer() {
                 onChange={({ target }) => setTelnumber(target.value)}
                 required
               />
-              <label htmlFor="tel">Telefon raqam</label>
+              <label htmlFor="tel">{t("heros.footer.phone")}</label>
             </div>
 
             <div
@@ -88,7 +90,7 @@ export default function Footer() {
                       .classList.toggle("active")
                   }
                 >
-                  Kursni tanlang
+                  {t("heros.footer.course")}
                 </label>
                 <IoIosArrowDown />
               </div>
@@ -101,7 +103,7 @@ export default function Footer() {
             </div>
 
             <button type="submit" disabled={state.submitting}>
-              Yuborish
+              {t("heros.footer.success")}
             </button>
           </form>
         </div>

@@ -8,12 +8,15 @@
 }
 
 body {
-  width: 100%;
+  width: 100svw;
   height: 100svh;
   background-image: url("../image/bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -24,7 +27,6 @@ body {
   background: #00000090;
   font-family: "Montserrat", sans-serif;
   position: relative;
-  overflow: hidden;
 }
 
 ::-webkit-scrollbar {

@@ -1,0 +1,89 @@
+{
+  "heros": {
+    "header": {
+      "about": "Biz haqimizda",
+      "courses": "Kurslar",
+      "team": "Jamoa",
+      "news": "Yangiliklar",
+      "call": "Aloqa",
+      "login": "Kirish"
+    },
+    "hero": {
+      "regular": "REGULAR IT",
+      "title": "school zamonaviy kasblar maktabi",
+      "subtitle": "Biz bilan qiziqishingizga qarab zamonaviy kasablarni mukammal o'rganing! Bizning maqsad yoshlarni zamonaviy kasblarga qiziqtirib va ularga mutaxasislarimiz tomonidan sifatli va tushunarli ta'lim berish.",
+      "link": "Bepul kursga yozilish"
+    },
+    "about": {
+      "title": "Biz haqimizda",
+      "paragraph1": "Qiyin yo‘l, Oson hayotga intilayotgan;",
+      "paragraph2": "Mashaqatdan qochmaydigan;",
+      "paragraph3": "Doim izlanishda bo‘lgan;",
+      "paragraph4.1": "Orzulari va maqsadlari yetuk bo‘lgan yoshlar uchun",
+      "regularschool": " REGULAR SCHOOL",
+      "paragraph4.2": ", zamonaviy kasblarni egallashda eng ishonchli o‘quv markazidir.",
+      "regular": "Regular",
+      "video1": " school haqida ",
+      "video2": " video!",
+      "advantages": {
+        "certificate": {
+          "title": "Kurs oxirida sertifikat bilan taqdirlash",
+          "body": "Eng yaxshi va iqtidorli o’quvchilarni ish bilan taminlash"
+        },
+        "grade": {
+          "title": "Sifatli va kreativ darslar",
+          "body": "Mutaxsislar tominidan, shinam xonada sifatli va ishonchli dars"
+        },
+        "coworking": {
+          "title": "Coworking zona",
+          "body": "Darsdan tashqari vazifalarni qilish uchun bepul joy"
+        },
+        "trainings": {
+          "title": "Yakshanba kunlari qiziqarli treninglar",
+          "body": "Movie day Musobaqalar Professional speakerlar Game day Speaking club"
+        },
+        "coffee": {
+          "title": "Bepul Coffee break",
+          "body": "Issiqgina coffee bilan qiziqarli va manfatli kitoblar"
+        },
+        "points": {
+          "title": "Dars davomida Point lar yig’ish",
+          "body": "Oʻqish davomida oʻzini bilimlariga tayanib pointlar yigʻishadi. POINTlarni sovgʻalarga almashish mumkin"
+        }
+      }
+    },
+    "courses": {
+      "title": "Kurslarimiz",
+      "frontend": {
+        "title": "Frontend",
+        "week": "Haftada - 3 marta (2 soatdan)"
+      },
+      "backend": {
+        "title": "Backend",
+        "week": "Haftada - 3 marta (2 soatdan)"
+      },
+      "english": {
+        "title": "English",
+        "week": "Haftada - 3 marta (2 soatdan)"
+      },
+      "duration": "Davomiyligi",
+      "price": "Oylik to’lov narxi",
+      "month": "oy",
+      "money": "So’m",
+      "register": "Royxatdan o’tish"
+    },
+    "team": {
+      "title": "Bizning jamoa",
+      "subtitle": "Dunyoqarashlari va orzulari bir-biri bilan to’liq ug’unlashib ketgan, bir-birini juda hurmat qiladigan, samimiy insonlardan tashkil topgan iqtidorli mutaxassislar jamoasi."
+    },
+    "footer": {
+      "title": "Bepul kursga yozilish",
+      "name": "Ismingizni kiriting",
+      "phone": "Raqamingizni kiriting",
+      "course": "Kursni tanlang",
+      "success": "Yuborish",
+      "petition": "Sizning arizangiz yuborildi"
+    }
+  },
+  "homes": "Tez kunda!"
+}

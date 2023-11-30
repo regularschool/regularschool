@@ -1,22 +1,17 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 
 export default function Heros() {
-  const [openRodal, setRodal] = useState(false);
-
+  const [t, i18n] = useTranslation("global");
   return (
     <section id="hero">
       <div className="container">
         <div className="title" data-aos="fade-right">
           <h1>
-            <span>REGULAR IT</span> school zamonaviy kasblar maktabi
+            <span>{t("heros.hero.regular")}</span> {t("heros.hero.title")}
           </h1>
-          <p>
-            Biz bilan qiziqishingizga qarab zamonaviy kasablarni mukammal
-            o'rganing! Bizning maqsad yoshlarni zamonaviy kasblarga qiziqtirib
-            va ularga mutaxasislarimiz tomonidan sifatli va tushunarli ta'lim
-            berish.
-          </p>
+          <p>{t("heros.hero.subtitle")}</p>
           <Link
             className="logo"
             activeClass="active"
@@ -26,7 +21,7 @@ export default function Heros() {
             offset={0}
             duration={500}
           >
-            Bepul kursga yozilish
+            {t("heros.hero.link")}
           </Link>
         </div>
       </div>

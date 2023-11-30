@@ -8,7 +8,7 @@ import Router from "./router";
 import "react-toastify/dist/ReactToastify.css";
 import "rodal/lib/rodal.css";
 import "aos/dist/aos.css";
-import "./style/style.css";
+import "./style/global.scss";
 
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";

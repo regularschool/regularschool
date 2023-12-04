@@ -1,19 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  lang: "uz",
+  account: localStorage.getItem("account")
+    ? JSON.parse(localStorage.getItem("account"))
+    : "",
 };
 
 export const mainSlice = createSlice({
   name: "main",
   initialState,
   reducers: {
-    getLang: (state, action) => {
-      state.users = action.payload;
+    getAccount: (state, action) => {
+      state.account = action.payload;
+      localStorage.setItem("account", JSON.stringify(action.payload));
     },
   },
 });
 
-export const { getLang } = mainSlice.actions;
+export const { getAccount } = mainSlice.actions;
 
 export default mainSlice.reducer;

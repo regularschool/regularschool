@@ -1,13 +1,13 @@
 import { takeEvery, call, put } from "redux-saga/effects";
-import { getLang } from "../slices/mainSlice";
+import { getAccount } from "../slices/mainSlice";
 import api from "../../api/instance";
 
-function* workGetLang(action) {
+function* workGetAccount(action) {
   // const response = yield call(api.get, "")
-  yield put(getLang(action.payload));
+  yield put(getAccount(action.payload));
   return;
 }
 
 export default function* userSaga() {
-  yield takeEvery("GET_LANG", workGetLang);
+  yield takeEvery("GET_ACCOUNT", workGetAccount);
 }

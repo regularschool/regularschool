@@ -85,5 +85,14 @@
       "petition": "Sizning arizangiz yuborildi"
     }
   },
-  "homes": "Tez kunda!"
+  "homes": "Tez kunda!",
+  "login": {
+    "profile": "Profil",
+    "back": "Chiqish",
+    "signin": "Kirish",
+    "phone":"Telefon",
+    "password":"Parol",
+    "forget":"Parolni unutdingizmi?",
+    "last": "Account yaratish faqat adminlar tomonidan bajariladi!"
+  }
 }

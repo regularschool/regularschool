@@ -10,30 +10,15 @@ import {
   BiLogoTelegram,
   BiSolidPhoneCall,
 } from "react-icons/bi";
+import { success } from "../../utility/toastify";
 
 export default function Footer() {
   const [t, i18n] = useTranslation("global");
   const [coursess, setCourses] = useState("");
-  const [telnumber, setTelnumber] = useState("");
   const [state, handleSubmit] = useForm("xqkvwgjr");
 
-  useEffect(() => {
-    if (telnumber.toLowerCase() == "e") setTelnumber("");
-    setTelnumber(telnumber.toLowerCase().replace("e", ""));
-  }, [telnumber]);
-
   function taost() {
-    if (state.succeeded)
-      toast.success(t("heros.footer.petition"), {
-        position: "top-right",
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
+    if (state.succeeded) success(t("heros.footer.petition"))
   }
 
   useEffect(() => taost(), [state.succeeded]);
@@ -60,8 +45,7 @@ export default function Footer() {
                 id="tel"
                 name="Telefon raqam"
                 autoComplete="off"
-                value={telnumber}
-                onChange={({ target }) => setTelnumber(target.value)}
+                onKeyDown={(evt) => evt.key === "e" && evt.preventDefault()}
                 required
               />
               <label htmlFor="tel">{t("heros.footer.phone")}</label>
@@ -96,9 +80,15 @@ export default function Footer() {
               </div>
 
               <div className="option">
-                <div onClick={() => setCourses("Frontend")}>{t("heros.courses.frontend.title")}</div>
-                <div onClick={() => setCourses("Backend")}>{t("heros.courses.backend.title")}</div>
-                <div onClick={() => setCourses("English")}>{t("heros.courses.english.title")}</div>
+                <div onClick={() => setCourses("Frontend")}>
+                  {t("heros.courses.frontend.title")}
+                </div>
+                <div onClick={() => setCourses("Backend")}>
+                  {t("heros.courses.backend.title")}
+                </div>
+                <div onClick={() => setCourses("English")}>
+                  {t("heros.courses.english.title")}
+                </div>
               </div>
             </div>
 

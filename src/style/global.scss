@@ -58,6 +58,10 @@ body {
   color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 img::selection,
 svg::selection,
 iframe::selection {

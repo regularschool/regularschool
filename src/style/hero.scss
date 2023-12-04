@@ -126,15 +126,42 @@ header {
           color: white !important;
         }
       }
+
+      .user {
+        border-radius: 50%;
+        border: 2px solid $color;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+          width: 32.8px;
+          height: 32.8px;
+          border-radius: 50%;
+          border: 1px solid white;
+        }
+      }
     }
 
     .mobileLogin {
       position: absolute;
       bottom: 10px;
       left: 10px;
+      opacity: 0;
+      transition: 1s;
+      transition-delay: 0.3s;
+
+      button {
+        opacity: 0;
+        transition: 0.5s;
+      }
 
       a {
         width: 132px;
+        opacity: 0;
+        transition: 0.5s;
       }
     }
 
@@ -211,6 +238,17 @@ header {
               transition-delay: 0.5s;
             }
           }
+
+          .mobileLogin {
+            opacity: 100%;
+
+            button {
+              opacity: 100%;
+            }
+            a {
+              opacity: 100%;
+            }
+          }
         }
       }
 
@@ -255,7 +293,7 @@ header {
 
       .switch {
         width: 200px;
-        height: calc(100vh + 1px);
+        height: calc(100svh + 1px);
         position: absolute;
         top: -15px;
         right: -16px;
@@ -378,12 +416,12 @@ main {
       align-items: center;
       justify-content: space-between;
 
-      @media (max-width: 475px) {
+      @media (max-width: 480px) {
         justify-content: center;
       }
 
       .title {
-        @media (max-width: 475px) {
+        @media (max-width: 480px) {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -402,7 +440,7 @@ main {
             color: $color;
           }
 
-          @media (max-width: 475px) {
+          @media (max-width: 480px) {
             line-height: 40px;
             text-align: center;
           }
@@ -421,7 +459,7 @@ main {
             margin-bottom: 100px;
           }
 
-          @media (max-width: 475px) {
+          @media (max-width: 480px) {
             line-height: 120%;
             text-align: center;
           }
@@ -444,7 +482,7 @@ main {
             color: white;
           }
 
-          @media (max-width: 475px) {
+          @media (max-width: 480px) {
             padding: 12px 30px;
           }
         }
@@ -571,7 +609,7 @@ main {
             width: 450px;
           }
 
-          @media (max-width: 475px) {
+          @media (max-width: 480px) {
             width: 100%;
           }
 
@@ -623,7 +661,7 @@ main {
           grid-template-columns: repeat(2, 50%);
         }
 
-        @media (max-width: 475px) {
+        @media (max-width: 480px) {
           width: 100%;
           grid-template-columns: 100%;
         }
@@ -644,7 +682,7 @@ main {
             height: 288px;
           }
 
-          @media (max-width: 475px) {
+          @media (max-width: 480px) {
             width: 100%;
             height: 230px;
           }
@@ -723,7 +761,7 @@ main {
           padding: 50px 25px;
         }
 
-        @media (max-width: 475px) {
+        @media (max-width: 480px) {
           padding: 50px 5px;
         }
 
@@ -845,7 +883,7 @@ main {
           border-radius: 10px;
           margin-bottom: 50px;
 
-          @media (max-width: 475px) {
+          @media (max-width: 480px) {
             display: none;
           }
 
@@ -876,7 +914,7 @@ main {
           padding: 40px 40px 60px 50px;
           border-radius: 20px;
 
-          @media (max-width: 475px) {
+          @media (max-width: 480px) {
             padding: 30px 20px 50px;
           }
 
@@ -912,7 +950,7 @@ main {
               text-align: start;
               margin-bottom: 38px;
 
-              @media (max-width: 475px) {
+              @media (max-width: 480px) {
                 font-size: 16px;
               }
             }
@@ -929,7 +967,7 @@ main {
                 justify-content: center;
               }
 
-              @media (max-width: 475px) {
+              @media (max-width: 480px) {
                 justify-content: space-between;
                 flex-wrap: nowrap;
                 column-gap: 0px;
@@ -943,7 +981,7 @@ main {
                   align-items: center;
                 }
 
-                @media (max-width: 475px) {
+                @media (max-width: 480px) {
                   transform: scale(0.8);
                   height: 180px;
 
@@ -995,7 +1033,7 @@ main {
             }
 
             a {
-              max-width: 170px;
+              max-width: 210px;
               width: 100%;
               padding: 12px 15px;
               outline: none;
@@ -1010,7 +1048,7 @@ main {
               text-align: center;
               cursor: pointer;
 
-              @media (max-width: 475px) {
+              @media (max-width: 480px) {
                 max-width: 240px;
               }
             }
@@ -1037,7 +1075,7 @@ main {
                 width: 280px;
               }
 
-              @media (max-width: 475px) {
+              @media (max-width: 480px) {
                 width: 275px;
                 padding-left: 0;
               }
@@ -1052,7 +1090,7 @@ main {
                 top: 0;
                 left: 0;
 
-                @media (max-width: 475px) {
+                @media (max-width: 480px) {
                   display: none;
                 }
               }
@@ -1086,7 +1124,7 @@ main {
                   top: 13px;
                   left: -50.2px;
 
-                  @media (max-width: 475px) {
+                  @media (max-width: 480px) {
                     display: none;
                   }
                 }
@@ -1129,7 +1167,7 @@ main {
               grid-template-columns: repeat(2, 128px);
             }
 
-            @media (max-width: 475px) {
+            @media (max-width: 480px) {
               gap: 20px;
             }
 
@@ -1157,7 +1195,7 @@ main {
                 height: 100px;
                 transform: scale(0.85);
 
-                @media (max-width: 475px) {
+                @media (max-width: 480px) {
                   width: 70px;
                   height: 70px;
                 }
@@ -2075,7 +2113,7 @@ footer {
       .formes {
         width: 75%;
 
-        @media (max-width: 475px) {
+        @media (max-width: 480px) {
           width: 100%;
         }
 
@@ -2317,7 +2355,7 @@ footer {
           font-size: 18px;
           transition: 0.2s;
 
-          @media (max-width: 475px) {
+          @media (max-width: 480px) {
             font-size: 15px;
           }
         }
@@ -2329,7 +2367,7 @@ footer {
           font-weight: 500;
           transition: 0.2s;
 
-          @media (max-width: 475px) {
+          @media (max-width: 480px) {
             font-size: 13px;
           }
         }
@@ -2343,7 +2381,7 @@ footer {
       text-wrap: nowrap;
       white-space: nowrap;
 
-      @media (max-width: 475px) {
+      @media (max-width: 480px) {
         font-size: 12px;
       }
     }

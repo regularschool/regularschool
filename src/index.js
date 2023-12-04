@@ -5,10 +5,14 @@ import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Router from "./router";
 
+import "./fonts/gilroy/gilroy.css";
 import "react-toastify/dist/ReactToastify.css";
 import "rodal/lib/rodal.css";
 import "aos/dist/aos.css";
 import "./style/global.scss";
+
+import { Provider } from "react-redux";
+import store from "./store/store";
 
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
@@ -32,12 +36,14 @@ i18next.init({
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
-  <I18nextProvider i18n={i18next}>
-    <BrowserRouter>
-      <Router />
-      <Analytics />
-      <ToastContainer />
-    </BrowserRouter>
-  </I18nextProvider>
+  <Provider store={store}>
+    <I18nextProvider i18n={i18next}>
+      <BrowserRouter>
+        <Router />
+        <Analytics />
+        <ToastContainer />
+      </BrowserRouter>
+    </I18nextProvider>
+  </Provider>
   // </React.StrictMode>
 );

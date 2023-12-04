@@ -1,19 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { Link as LinkTo } from "react-router-dom";
+import { Link as LinkTo, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { toast } from "react-toastify";
+import { useSelector } from "react-redux";
 import { Link } from "react-scroll";
 import i18next from "i18next";
 
 import { IoClose } from "react-icons/io5";
+import { info } from "../../utility/toastify";
 import logoBlack from "../../image/school.png";
 import logoWhite from "../../image/schoolWhite.png";
 import langRU from "../../image/langRu.svg";
 import langUZ from "../../image/langUz.svg";
 
 export default function Header() {
+  const confirm = useSelector((state) => state.mainSlice.account);
   const [isScrolled, setScrolled] = useState(false);
   const [removeTesting, setRemoveTesting] = useState(true);
+  const navigate = useNavigate();
 
   const handleScroll = () => {
     if (window.pageYOffset > 100) setScrolled(true);
@@ -21,16 +24,7 @@ export default function Header() {
   };
 
   useEffect(() => {
-    toast.warning("Sayt test rejimida ishlamoqda!", {
-      position: "bottom-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-    });
+    info("Sayt test rejimida ishlamoqda!", "bottom-left");
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -40,6 +34,7 @@ export default function Header() {
   const language = localStorage.getItem("lang");
   const handleChangeLanguage = (lang) => {
     i18next.changeLanguage(lang);
+    document.querySelector("html").setAttribute("lang", lang);
   };
 
   useEffect(() => {
@@ -148,7 +143,17 @@ export default function Header() {
               alt={i18n.language == "ru" ? "ru" : "uz"}
             />
           </button>
-          <LinkTo to="/login">{t("heros.header.login")}</LinkTo>
+          {confirm ? (
+            confirm.image ? (
+              <div className="user" onClick={() => navigate("/home")}>
+                <img src={confirm.image} alt="user" />
+              </div>
+            ) : (
+              <LinkTo to="/home">{t("login.profile")}</LinkTo>
+            )
+          ) : (
+            <LinkTo to="/login">{t("heros.header.login")}</LinkTo>
+          )}
         </div>
 
         <div className="menu">
@@ -243,7 +248,11 @@ export default function Header() {
                   alt={i18n.language == "ru" ? "ru" : "uz"}
                 />
               </button>
-              <LinkTo to="/login">{t("heros.header.login")}</LinkTo>
+              {confirm ? (
+                <LinkTo to="/home">{t("login.profile")}</LinkTo>
+              ) : (
+                <LinkTo to="/login">{t("heros.header.login")}</LinkTo>
+              )}
             </div>
           </div>
         </div>

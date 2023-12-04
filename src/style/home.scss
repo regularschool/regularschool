@@ -4,6 +4,7 @@ $white: #ffffff;
 #home {
   background: #e9ecef;
   display: flex;
+  font-family: "Gilroy";
 
   header {
     width: 100%;
@@ -67,23 +68,28 @@ $white: #ffffff;
 
         .lang {
           all: unset;
-          width: 55px;
+          width: 40px;
           height: 40px;
           cursor: pointer;
           overflow: hidden;
 
           display: flex;
           justify-content: center;
+          border-radius: 6px;
+          transform: translateY(0.5px);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4),
+            -2px -2px 4px rgba(255, 255, 255, 0.9),
+            inset 0 0 0 rgba(255, 255, 255, 0.9);
 
           img {
             height: 100%;
-            transform: scale(1.5) translateY(2px);
+            transform: scale(1.15) translate(0.1px, -0.5px);
           }
         }
 
         .bell {
-          width: 38px;
-          height: 38px;
+          width: 40px;
+          height: 40px;
           border: none;
           text-align: center;
           background: #e9ecef;
@@ -105,7 +111,7 @@ $white: #ffffff;
 
           img {
             height: 100%;
-            transform: scale(1.5) translate(-0.3px, -0.5px);
+            transform: scale(1.55) translate(-0.3px, -0.5px);
           }
         }
 
@@ -115,7 +121,7 @@ $white: #ffffff;
           gap: 8px;
 
           img {
-            height: 38px;
+            height: 40px;
             border-radius: 8px;
             box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4),
               -2px -2px 4px rgba(255, 255, 255, 0.9),
@@ -129,13 +135,13 @@ $white: #ffffff;
 
             h2 {
               font-size: 16px;
-              font-weight: 500;
+              font-weight: 600;
               color: black;
             }
 
             h3 {
               font-size: 13px;
-              font-weight: 400;
+              font-weight: 500;
               color: #8a92a6;
             }
           }
@@ -152,21 +158,40 @@ $white: #ffffff;
 
     a {
       width: 100%;
-      height: 80px;
-      padding: 5px;
+      height: 70px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       color: black;
+      position: relative;
+      padding: 5px;
 
       svg {
         font-size: 22px;
       }
+      span {
+        font-weight: 500;
+      }
 
       &.active {
+        padding: 5px 5px 5px 9px;
+        background: linear-gradient(90deg, transparent, #0dd70d0c);
+
         span {
-          font-weight: 600;
+          font-weight: 700;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 3px;
+          height: 100%;
+          background: $color;
+          border-radius: 0 1em 1em 0;
+          box-shadow: 1px 0 5px $color, 0 0 2px #077b07 inset;
         }
       }
     }

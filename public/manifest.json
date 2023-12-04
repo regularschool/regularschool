@@ -2,7 +2,7 @@
   "name": "Regular School",
   "short_name": "Regular IT School",
   "start_url": "/home",
-  "scope": "/home",
+  "scope": "/",
   "display": "minimal-ui",
   "theme_color": "#0dd70d",
   "background_color": "#ffffff",

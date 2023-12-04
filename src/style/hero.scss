@@ -135,10 +135,11 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 0.5px;
 
-        img{
-          width: 32.8px;
-          height: 32.8px;
+        img {
+          width: 34.8px;
+          height: 34.8px;
           border-radius: 50%;
           border: 1px solid white;
         }

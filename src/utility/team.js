@@ -1,5 +1,5 @@
 import Rasuljon from "../image/team/rasulovrasuljon.png";
-import Alisher from "../image/team/alisherzayniddinov.png";
+// import Alisher from "../image/team/alisherzayniddinov.png";
 import Samandar from "../image/team/samandarbozorboyev.png";
 import Shoxrux from "../image/team/shoxruxasadov.png";
 import Ezoza from "../image/team/ezozanomozova.png";
@@ -10,7 +10,7 @@ import User from "../image/team/user.png";
 
 import MiniShoxrux from "../image/team/mini/shoxruxasadov.png";
 import MiniRasuljon from "../image/team/mini/rasulovrasuljon.png";
-import MiniAlisher from "../image/team/mini/alisherzayniddinov.png";
+// import MiniAlisher from "../image/team/mini/alisherzayniddinov.png";
 import MiniSamandar from "../image/team/mini/samandarbozorboyev.png";
 import MiniSevinch from "../image/team/mini/rasulovasevinch.png";
 import MiniMadina from "../image/team/mini/madinanematova.png";
@@ -20,14 +20,14 @@ import MiniUser from "../image/team/mini/user.png";
 
 import Regular from "../image/company/regular.jpg";
 import EmpireSoft from "../image/company/empiresoft.jpg";
-import Jobirov from "../image/company/jobirov.jpg";
-import RegularHD from "../image/company/regular.png";
-import Asphalt from "../image/company/asphalt.png";
-import Alibaba from "../image/company/alibaba.png";
-import Dilya from "../image/company/dilya.png";
-import Money from "../image/company/money.png";
-import Berramode from "../image/company/berramode.png";
-import CafeFlorya from "../image/company/ganga.png";
+// import Jobirov from "../image/company/jobirov.jpg";
+// import RegularHD from "../image/company/regular.png";
+// import Asphalt from "../image/company/asphalt.png";
+// import Alibaba from "../image/company/alibaba.png";
+// import Dilya from "../image/company/dilya.png";
+// import Money from "../image/company/money.png";
+// import Berramode from "../image/company/berramode.png";
+// import CafeFlorya from "../image/company/ganga.png";
 import ITPARK from "../image/company/itpark.webp";
 import TIZIM from "../image/company/tizim.jpg";
 import SHSAL from "../image/company/sirojiddinov.png"
@@ -128,83 +128,83 @@ const expertMates = [
       },
     ],
   },
-  {
-    main: Alisher,
-    image: MiniAlisher,
-    city: "Tashkent Uzbekistan",
-    name: "Alisher Zayniddinov",
-    expert: "Targetolog",
-    job: "Targetolog",
-    communication: 4,
-    technicalSkill: 4,
-    contact: {
-      telegram: "https://t.me/alisherzayniddinovv",
-      call: "+998901220163",
-      email: false,
-    },
-    socialnet: {
-      instagram: "https://www.instagram.com/alisherzaynddnvv",
-      facebook: "https://www.facebook.com/alisherzayniddinov001",
-      telegramChannel: false,
-      youtube: false,
-      tiktok: false,
-      linkedin: false,
-      github: false,
-      portfolio: false,
-    },
-    skills: ["SMM", "Target", "Marketing"],
-    aboutme:
-      "Alisher Zayniddinov SMM Mutaxasisi. 2 yildan buyon shu sohada ishlab kelmoqda. Undan tashqari Target yo'lanishi bo'yicha ham katta tajribaga ega mutaxasis. 'Jobirov School' kurslarini tamomlagan va 15+ blogger, birnechta expertlar va xalq tanigan aktyorlar bilan ishlab kelmoqda.",
-    experience: [
-      {
-        company: "Regular School",
-        name: "Target Marketing",
-        image: RegularHD,
-      },
-      {
-        company: "Jobirov School",
-        name: "Target Marketing",
-        image: Jobirov,
-      },
-      {
-        company: "Asphalt Dream",
-        name: "Target Marketing",
-        image: Asphalt,
-      },
-      {
-        company: "Alibaba",
-        name: "Target Marketing",
-        image: Alibaba,
-      },
-      {
-        company: "Dilya Stilist",
-        name: "Target Marketing",
-        image: Dilya,
-      },
-      {
-        company: "Old Money",
-        name: "Target Marketing",
-        image: Money,
-      },
-      {
-        company: "Berra Mode",
-        name: "Target Marketing",
-        image: Berramode,
-      },
-      {
-        company: "Cafe Florya",
-        name: "Target Marketing",
-        image: CafeFlorya,
-      },
-    ],
-    education: [
-      {
-        name: "TATU Akademik Litseyi",
-        bachelor: "Iqdisod yo'nalishi",
-        image: TUIT,
-      },
-    ],
-  },
+  // {
+  //   main: Alisher,
+  //   image: MiniAlisher,
+  //   city: "Tashkent Uzbekistan",
+  //   name: "Alisher Zayniddinov",
+  //   expert: "Targetolog",
+  //   job: "Targetolog",
+  //   communication: 4,
+  //   technicalSkill: 4,
+  //   contact: {
+  //     telegram: "https://t.me/alisherzayniddinovv",
+  //     call: "+998901220163",
+  //     email: false,
+  //   },
+  //   socialnet: {
+  //     instagram: "https://www.instagram.com/alisherzaynddnvv",
+  //     facebook: "https://www.facebook.com/alisherzayniddinov001",
+  //     telegramChannel: false,
+  //     youtube: false,
+  //     tiktok: false,
+  //     linkedin: false,
+  //     github: false,
+  //     portfolio: false,
+  //   },
+  //   skills: ["SMM", "Target", "Marketing"],
+  //   aboutme:
+  //     "Alisher Zayniddinov SMM Mutaxasisi. 2 yildan buyon shu sohada ishlab kelmoqda. Undan tashqari Target yo'lanishi bo'yicha ham katta tajribaga ega mutaxasis. 'Jobirov School' kurslarini tamomlagan va 15+ blogger, birnechta expertlar va xalq tanigan aktyorlar bilan ishlab kelmoqda.",
+  //   experience: [
+  //     {
+  //       company: "Regular School",
+  //       name: "Target Marketing",
+  //       image: RegularHD,
+  //     },
+  //     {
+  //       company: "Jobirov School",
+  //       name: "Target Marketing",
+  //       image: Jobirov,
+  //     },
+  //     {
+  //       company: "Asphalt Dream",
+  //       name: "Target Marketing",
+  //       image: Asphalt,
+  //     },
+  //     {
+  //       company: "Alibaba",
+  //       name: "Target Marketing",
+  //       image: Alibaba,
+  //     },
+  //     {
+  //       company: "Dilya Stilist",
+  //       name: "Target Marketing",
+  //       image: Dilya,
+  //     },
+  //     {
+  //       company: "Old Money",
+  //       name: "Target Marketing",
+  //       image: Money,
+  //     },
+  //     {
+  //       company: "Berra Mode",
+  //       name: "Target Marketing",
+  //       image: Berramode,
+  //     },
+  //     {
+  //       company: "Cafe Florya",
+  //       name: "Target Marketing",
+  //       image: CafeFlorya,
+  //     },
+  //   ],
+  //   education: [
+  //     {
+  //       name: "TATU Akademik Litseyi",
+  //       bachelor: "Iqdisod yo'nalishi",
+  //       image: TUIT,
+  //     },
+  //   ],
+  // },
   {
     main: Samandar,
     image: MiniSamandar,

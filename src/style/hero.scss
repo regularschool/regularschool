@@ -2385,6 +2385,15 @@ footer {
       @media (max-width: 480px) {
         font-size: 12px;
       }
+
+      a {
+        text-decoration: none;
+        color: #2c2c2c;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }

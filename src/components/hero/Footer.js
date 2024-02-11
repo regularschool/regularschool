@@ -137,7 +137,7 @@ export default function Footer() {
               <BiSolidPhoneCall /> <h5>+998555003663</h5>
             </a>
           </div>
-          <p>{`OOO "Regular AR SIM" © 2022-${new Date().getFullYear()}.`}</p>
+          <p>{`OOO "Regular AR SIM" © 2022-${new Date().getFullYear()}`} | <a href="https://Shoxruxasadov.uz">Powered By</a></p>
         </div>
       </div>
     </footer>

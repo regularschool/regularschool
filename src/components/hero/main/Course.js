@@ -81,7 +81,7 @@ export default function Course() {
                   </svg>
                   <h4>{t("heros.courses.price")}</h4>
                   <h5>
-                    900.000 <span>{t("heros.courses.money")}</span>
+                    1.800.000 <span>{t("heros.courses.money")}</span>
                   </h5>
                 </div>
               </div>
@@ -373,7 +373,7 @@ export default function Course() {
                   </svg>
                   <h4>{t("heros.courses.price")}</h4>
                   <h5>
-                    900.000 <span>{t("heros.courses.money")}</span>
+                    1.800.000 <span>{t("heros.courses.money")}</span>
                   </h5>
                 </div>
               </div>

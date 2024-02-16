@@ -94,8 +94,10 @@ export default function Login() {
               dispatch({ type: "GET_ACCOUNT", payload: doc.data() });
               navigate("/home");
               failed = false;
+              console.log("snapshot ishladi");
             });
             if (failed) wrong("Parol yoki telefoningiz xato !");
+            console.log("snapshot ishlamadi");
           }
         );
         setTimeout(() => setWait(false), 3000);

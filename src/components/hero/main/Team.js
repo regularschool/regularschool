@@ -513,20 +513,6 @@ export default function Team() {
                           </div>
                         </div>
                       ))
-                    ) : selectMate == 1 ? (
-                      <div className="forsmm">
-                        {expertMates[selectMate].experience.map(
-                          (item, index) => (
-                            <div className="smmexp" key={index}>
-                              <img src={item.image} />
-                              <div className="comanjob">
-                                <h3>{item.company}</h3>
-                                <span>{item.name}</span>
-                              </div>
-                            </div>
-                          )
-                        )}
-                      </div>
                     ) : (
                       expertMates[selectMate].experience.map((item, index) => (
                         <div className="proexp" key={index}>
